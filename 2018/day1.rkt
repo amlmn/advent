@@ -1,8 +1,8 @@
 #lang racket/base
 
 (require racket/file)
-(define freqs (map string->number (file->lines "day1.input" #:line-mode 'any)))
-(define test-freqs (map string->number (file->lines "day1.input.test" #:line-mode 'any)))
+(define freqs (map string->number (file->lines "input.day1" #:line-mode 'any)))
+(define test-freqs (map string->number (file->lines "input.day1.test" #:line-mode 'any)))
 
 ; Part 1
 (define (compute-sum freqs) (foldl + 0 freqs))
